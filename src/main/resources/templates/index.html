@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--  -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>INDEX</h1>
+    <p th:text="${MMM}">这是一个 P标签！</p>
+    <input th:value="${MMM}">
+
+</body>
+
+<script th:inline="javascript">
+    var message = [[${MMM}]];
+    alert(message);
+</script>
+
+</html>
